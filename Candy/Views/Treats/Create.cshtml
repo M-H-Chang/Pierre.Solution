@@ -1,0 +1,20 @@
+@model Candy.Models.Treat
+
+@{
+  Layout = "_Layout";
+}
+
+<h1>Add a Treat</h1>
+<p>Add a Treat here:</p>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Name)
+  @Html.TextBoxFor(model => model.Name)
+
+  <input type="submit" class="btn btn-primary" value="Add New Treat" />
+}
+
+
+<p><a href="/">Back home</a></p>
+<p><a href="/treats">Back to treats.</a></p>
