@@ -14,7 +14,7 @@ namespace Candy.Controllers
   [Authorize]
   public class FlavorsController : Controller
   {
-    private readonly FlavorBoxContext _db;
+    private readonly CandyContext _db;
     private readonly UserManager<ApplicationUser> _userManager;
 
     public FlavorsController(UserManager<ApplicationUser> userManager, CandyContext db)

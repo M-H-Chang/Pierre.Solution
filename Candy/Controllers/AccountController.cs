@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
-using RecipeBox.Models;
+using Candy.Models;
 using System.Threading.Tasks;
 using Candy.ViewModels;
 
@@ -12,7 +12,7 @@ namespace Candy.Controllers
     private readonly UserManager<ApplicationUser> _userManager;
     private readonly SignInManager<ApplicationUser> _signInManager;
 
-    public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, RecipeBoxContext db)
+    public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, CandyContext db)
     {
       _userManager = userManager;
       _signInManager = signInManager;
